@@ -28,7 +28,7 @@ String get packageDirectory {
 
   // Search upwards from the script location.
   var script = Platform.script;
-  var dir = path.fromUri(Platform.script);
+  var dir = path.fromUri(script);
   var root = path.rootPrefix(dir);
 
   while (dir != root) {
